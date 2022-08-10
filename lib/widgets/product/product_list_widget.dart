@@ -3,7 +3,7 @@ import 'package:shopping/widgets/product/product_card_widget.dart';
 
 class ProductList extends StatelessWidget {
   final Axis? scrollDirection;
-  ProductList({this.scrollDirection});
+  const ProductList({this.scrollDirection});
 
   @override
   Widget build(BuildContext context) {

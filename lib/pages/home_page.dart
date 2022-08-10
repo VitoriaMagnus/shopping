@@ -13,7 +13,6 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.all(15),
-          color: Color(0xFFF5F5F5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -26,9 +25,7 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'Categories',
-                style: TextStyle(
-                  fontSize: 30,
-                ),
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(
                 height: 10,
@@ -43,11 +40,9 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     'Best Selling',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   TextButton(
                     onPressed: () {},

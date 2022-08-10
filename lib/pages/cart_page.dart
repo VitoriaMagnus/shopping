@@ -34,7 +34,7 @@ class CartPage extends StatelessWidget {
                       Text(
                         '\$4250',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Theme.of(context).colorScheme.primary,
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),
@@ -46,7 +46,7 @@ class CartPage extends StatelessWidget {
                   height: 50,
                   width: 150,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -57,7 +57,7 @@ class CartPage extends StatelessWidget {
                     child: Text(
                       'Checkout',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                   ),
@@ -74,18 +74,18 @@ class CartPage extends StatelessWidget {
 Widget productList(context) {
   return ListView(
     children: [
-      productItem(),
-      productItem(),
-      productItem(),
-      productItem(),
-      productItem(),
-      productItem(),
-      productItem(),
+      productItem(context),
+      productItem(context),
+      productItem(context),
+      productItem(context),
+      productItem(context),
+      productItem(context),
+      productItem(context),
     ],
   );
 }
 
-Widget productItem() {
+Widget productItem(context) {
   return Container(
     height: 120,
     margin: EdgeInsets.all(5),
@@ -112,7 +112,7 @@ Widget productItem() {
               Text(
                 '\$200',
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: Theme.of(context).colorScheme.primary,
                 ),
               ),
               SizedBox(

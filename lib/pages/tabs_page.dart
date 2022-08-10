@@ -28,11 +28,11 @@ class TabsPage extends StatelessWidget {
             icon: Icon(Icons.perm_identity),
           ),
         ],
-        labelColor: Colors.blue,
+        labelColor: Color(0xFF00C569),
         unselectedLabelColor: Colors.black38,
         indicatorSize: TabBarIndicatorSize.label,
         indicatorPadding: EdgeInsets.all(5.0),
-        indicatorColor: Colors.blue,
+        indicatorColor: Color(0xFF00C569),
       ),
     );
   }
