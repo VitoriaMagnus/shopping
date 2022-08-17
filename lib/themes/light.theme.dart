@@ -17,7 +17,6 @@ ThemeData lightTheme() {
     tabBarTheme: const TabBarTheme(
       labelColor: primaryColor,
     ),
-
     textTheme: TextTheme(
       headlineMedium: TextStyle(
         color: Colors.black,
